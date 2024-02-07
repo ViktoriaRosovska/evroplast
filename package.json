@@ -1,7 +1,7 @@
 {
-  "name": "goit-typescript-hw-01",
+  "name": "evroplast",
   "version": "1.0.0",
-  "description": "Typescript",
+  "description": "evroplast",
   "main": "index.js",
   "source": "index.html",
   "scripts": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ViktoriaRosovska/goit-typescript-hw-01/"
+    "url": "https://github.com/ViktoriaRosovska/evroplast"
   },
   "author": "Viktoria Rosovska",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ViktoriaRosovska/goit-typescript-hw-01/issues"
+    "url": "https://github.com/ViktoriaRosovska/evroplast/issues"
   },
-  "homepage": "https://viktoriarosovska.github.io/goit-typescript-hw-01/",
+  "homepage": "https://viktoriarosovska.github.io/evroplast/",
   "devDependencies": {
     "@web/dev-server": "^0.4.2",
     "css-loader": "^6.10.0",
