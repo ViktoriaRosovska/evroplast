@@ -23,6 +23,21 @@ module.exports = {
         test: [/\.css$/i],
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"], //, "development" ? "style-loader" : MiniCssExtractPlugin.loader
       },
+      {
+        test: /\.(sass|less|css)$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: "css-loader", options: {} },
+          {
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              plugins: [require("autoprefixer")({})],
+            },
+          },
+        ],
+      },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
     ],
   },
@@ -61,7 +76,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       linkType: "text/css",
-      filename: "index.html",
+      filename: "./src/application.tailwind.css",
     }),
   ],
 };

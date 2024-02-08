@@ -1,0 +1,5 @@
+@layer base {
+  .containerSize {
+    @apply container mx-auto border border-green-500 w-296 px-12;
+  }
+}

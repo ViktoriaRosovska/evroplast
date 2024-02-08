@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "./base/base.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@layer base {
+  .containerSize {
+    @apply container mx-auto border border-green-500 w-296 px-12;
+  }
+}
