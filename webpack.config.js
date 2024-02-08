@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         test: [/\.css$/i],
-        use: ["css-loader", "postcss-loader", "development" ? "style-loader" : MiniCssExtractPlugin.loader],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"], //, "development" ? "style-loader" : MiniCssExtractPlugin.loader
       },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
     ],
@@ -57,12 +57,11 @@ module.exports = {
       ],
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "dist", "index.html"),
-      inject: false,
+      template: path.resolve(__dirname, "src", "templates", "index.html"),
     }),
     new MiniCssExtractPlugin({
-      // linkType: "text/css",
-      filename: "output.css",
+      linkType: "text/css",
+      filename: "index.html",
     }),
   ],
 };

@@ -1,10 +1,17 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./node_modules/flowbite/**/*.js", "./src/**/*.{ts,tsx,html}"],
+  content: ["./src/**/*.ts", "./**/*.html", "./node_modules/flowbite/**/*.js"],
   theme: {
-    extend: {},
+    container: {
+      // default breakpoints but with 40px removed
+      screens: {
+        sm: "320px",
+        md: "748px",
+        lg: "984px",
+        xl: "1900px",
+      },
+    },
   },
-  variants: {
-    extend: {},
-  },
+
   plugins: [require("flowbite/plugin")],
 };
