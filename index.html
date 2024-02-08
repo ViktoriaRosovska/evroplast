@@ -6,26 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simple TypeScript pag 5</title>
   <base href="/" />
-  <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" type="text/css" href="./style/application.css" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
 </head>
 
 <body>
-  <section>
-    <div class="xl:container mx-auto">
-      <nav>
-        <ul class="flex flex-row">
-          <li>Планета пластик</li>
-          <li>08203, Київська обл., м. Ірпінь, вул. Покровська, 1</li>
-          <li>Відділ продажів: Пн-Пт с 9:00 до 17:00 Склад: Пн-Пт с 9:30 до 16:30</li>
-          <li>
-            <a href="tel:+38(044) 2290000" class="underline text-slate-500">(044) 2290000 Зворотній зв'язок</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-
+  <header>
+    <section>
+      <div class="container mx-auto border border-red-500 w-296 px-12 py-4">
+        <nav class="">
+          <ul class="flex flex-row items-center justify-center">
+            <li class="mr-36">Планета пластик</li>
+            <li class="w-48 mr-16">08203, Київська обл., м. Ірпінь, вул. Покровська, 1</li>
+            <li class="w-72 mr-16">Відділ продажів: Пн-Пт с 9:00 до 17:00 Склад: Пн-Пт с 9:30 до 16:30</li>
+            <li class="w-36">
+              <a href="tel:+38(044) 2290000" class="underline text-slate-500">+380 (44) 2290000 Зворотній зв'язок</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section>
+      <div class="containerSize container mx-auto border border-red-500 w-296 px-12">
+        <nav>
+          <ul class="flex flex-row">
+            <li>Продукція</li>
+            <li>Про компанію</li>
+            <li>Виробництво</li>
+            <li>Як обрати?</li>
+            <li>Контакти</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </header>
   <input class="border-solid border-2 border-indigo-600" />
   <button id="button" type="button" class="text-white bg-red-700 hover:bg-green-700 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
     Concat!???
